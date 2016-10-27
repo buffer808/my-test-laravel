@@ -7,6 +7,10 @@
 @section('main-content')
 
     <div class="error-page">
+<<<<<<< HEAD
+        <img src="{{ ('img/404.png') }}" alt="image: 404">
+=======
+>>>>>>> bc733ef0e7dc3aa78114e49a43ff131012ca53bf
         <h2 class="headline text-yellow"> 404</h2>
         <div class="error-content">
             <h3><i class="fa fa-warning text-yellow"></i> Oops! {{ trans('adminlte_lang::message.pagenotfound') }}.</h3>

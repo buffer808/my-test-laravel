@@ -10,10 +10,13 @@ window._ = require('lodash');
 window.$ = window.jQuery = require('jquery');
 require('bootstrap-sass');
 
+<<<<<<< HEAD
+=======
 require('admin-lte');
 window.toastr = require('toastr');
 require('icheck');
 
+>>>>>>> bc733ef0e7dc3aa78114e49a43ff131012ca53bf
 /**
  * Vue is a modern JavaScript library for building interactive web interfaces
  * using reactive data binding and reusable components. Vue's API is clean
@@ -30,7 +33,11 @@ require('vue-resource');
  */
 
 Vue.http.interceptors.push((request, next) => {
+<<<<<<< HEAD
+    request.headers.set('X-CSRF-TOKEN', Laravel.csrfToken);
+=======
     request.headers['X-CSRF-TOKEN'] = Laravel.csrfToken;
+>>>>>>> bc733ef0e7dc3aa78114e49a43ff131012ca53bf
 
     next();
 });
